@@ -1,0 +1,16 @@
+version: "3.9"
+
+services:
+  db:
+    image: mysql
+    environment:
+      - MYSQL_DB='db'
+      - MYSQL_USER='sanket'
+      - MYSQL_PASSWORD='apple@123'
+    ports:
+      - '3305:3305'
+  web:
+    build: .
+    command: python manage.py runserver 0.0.0.0:8000
+    ports:
+      - "8000:8000"

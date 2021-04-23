@@ -1,0 +1,7 @@
+#!c:\users\user 2\pycharmprojects\object_detect\venv\scripts\python.exe
+
+from domainr import Domain
+
+
+if __name__ == '__main__':
+    Domain().main()
